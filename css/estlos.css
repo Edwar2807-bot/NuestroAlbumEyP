@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../images/fondo3.jpg');
+}
+
+h1 {
+    background-color: #FAE5D3;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin: 10px;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+.descripcion2, .cargue {
+    text-align: center;
+    font-family: "Latin Modern Roman";
+    font-style: italic;
+}
+.cargue {
+    background-color: #FDEDEC ;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    padding: 1%;
+    border-radius: 10px; 
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);   
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.filtro-fecha {
+    background-color: #AEB6BF;
+    text-align: center;
+}
+
+.año {
+    margin: 10px;
+}
+
+
+.img2 {
+    display: inline-block;
+    cursor: pointer;
+    max-width: 70%;
+}
+
+.imagen {
+    transition: width 0.5s; /* Transición suave cuando se cambia el ancho */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre la imagen */
+}
+
+.imagen-ampliada {
+    transform: scale(150%, 150%);
+    transition: 0.6s;
+}
+
+.container {
+    width: 100vw;
+}

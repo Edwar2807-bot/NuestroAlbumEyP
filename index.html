@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estlos.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Nuestro Albúm
+        </h1>
+        <p class="descripcion">Edwar y Paula</p>
+        <p class="descripcion2">Te amo demasiado y quiero que cada momento que compartamos sea eterno al guadarlo en nuestro albúm.</p>
+    </header>
+    
+    <div class="filtro-fecha">
+        <a href="#2022">2022</a>
+        <a href="#2023">2023</a>
+        <a href="#2024">2024</a>
+        <a href="#2025">2025</a>
+    </div>
+
+    <div class="container">
+        <div id="2022" class="año">
+            <h2>2022</h2>
+            <div class="cargue">
+                <p><b>Date: </b>12/03/2022</p>
+                <p><b>Description: </b>Nuestra primer foto, compartimos una noche bonita!</p>
+                <img src="./images/2022/2022_2.jpeg" alt="Nuestra primer foto" width="40%" height="10%" class="imagen" id="imagenAmpliada" onclick="ampliarImagen(this)">
+            </div>
+        </div>
+
+        <div id="2023" class="año">
+            <h2>2023</h2>
+            <div class="cargue">
+                <p><b>Date: </b>12/03/2023</p>
+                <p><b>Description: </b>Nuestra primera cita virtual, Paula tenía covid!</p>
+                <img src="./images/2022/2022_1.jpeg" alt="Nuestra primer foto" width="40%" height="20%" class="imagen" id="imagenAmpliada" onclick="ampliarImagen(this)">
+                
+            </div>
+        </div>
+
+        <div id="2024" class="año">
+            <h2>2024</h2>
+            <div class="cargue">
+                <p><b>Date: </b>29/03/2024</p>
+                <p><b>Description: </b>Primera Cita despues de mucho tiempo, salimos a comer picada!</p>
+                <img clas="img2" src="./images/2024/2024_1.jpeg" alt="Nuestra primer foto" width="30%" height="200px" class="imagen" id="imagenAmpliada" onclick="ampliarImagen(this)">
+                <img clas="img2" src="./images/2024/2024_2.jpeg" alt="Nuestra primer foto" width="30%" height="200px" class="imagen" id="imagenAmpliada" onclick="ampliarImagen(this)">
+            </div>
+
+            <div class="cargue">
+                <p><b>Date: </b>04/04/2024</p>
+                <p><b>Description: </b>Nos quedamos a dormir juntos y Paula hablaba dormida</p>
+                <video width="640" height="360" controls>
+                    <source src="./images/2024/2024_3.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+
+            <div class="cargue">
+                <p><b>Date: </b>05/04/2024</p>
+                <p><b>Description: </b>Compramos a Mecato en el Dollarcity!</p>
+                <img clas="img2" src="./images/2024/2024_4.jpeg" alt="Nuestra primer foto" width="300" height="300" class="imagen" id="imagenAmpliada" onclick="ampliarImagen(this)">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
+
