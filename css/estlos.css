@@ -46,7 +46,7 @@ a:hover{
     text-decoration: underline;
 }
 
-.filtro-fecha {
+.filtro-fecha, .filtro-fecha2 {
     background-color: #AEB6BF;
     text-align: center;
     padding: 5px;
@@ -67,7 +67,7 @@ a:hover{
   /* Media query para pantallas más grandes que 1000px */
   @media screen and (min-width: 800px) {
     .img3 {
-      height: 300px;
+      height: 250px;
     }
   }
 
@@ -106,4 +106,8 @@ p {
 
 .tema {
     padding: 10px;
+}
+
+.filter {
+    display: none;
 }
