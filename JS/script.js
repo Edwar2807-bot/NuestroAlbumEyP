@@ -27,7 +27,8 @@ function filtroBusqueda(){
 
 document.addEventListener("DOMContentLoaded", function() {
     const video = document.querySelector('.video');
-    video.addEventListener('loadedmetadata', function() {
+    
+    video.addEventListener('loadeddata', function() {
         const canvas = document.createElement('canvas');
         canvas.width = video.videoWidth;
         canvas.height = video.videoHeight;
@@ -36,4 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const imgData = canvas.toDataURL('image/png');
         video.setAttribute('poster', imgData);
     });
+    
+    // Esto asegura que el video se cargue aunque no se reproduzca
+    video.load();
 });
