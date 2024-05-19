@@ -74,7 +74,7 @@ a:hover{
   /* Media query para pantallas más pequeñas que 1000px */
   @media screen and (max-width: 800px) {
     .img3 {
-      height: 50px;
+      height: 80px;
     }
   }
 
@@ -93,4 +93,13 @@ p {
 
 .año{
     padding-top: 30px;
+}
+
+.final {
+    margin: 50px;
+    padding: 50px;
+}
+
+.tema {
+    padding: 10px;
 }
