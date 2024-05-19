@@ -24,3 +24,16 @@ function filtroBusqueda(){
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector('.img3');
+    video.addEventListener('loadedmetadata', function() {
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const imgData = canvas.toDataURL('image/png');
+        video.setAttribute('poster', imgData);
+    });
+});
