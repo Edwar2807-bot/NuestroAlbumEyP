@@ -120,8 +120,13 @@ p {
 .audio {
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
 }
 
 .audio1{
     max-width: 100%;
+    justify-content: center;
 }
