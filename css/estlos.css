@@ -57,22 +57,26 @@ a:hover{
 }
 
 
-.img2 {
+.img2, .img3 {
     display: inline-block;
     cursor: pointer;
     max-width: 70%;
-}
-
-@media (min-width: 1000px) {
-    .img2 {
-        height: 200px;
-    }
-}
-
-.imagen {
     transition: width 0.5s; /* Transición suave cuando se cambia el ancho */
     cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre la imagen */
 }
+  /* Media query para pantallas más grandes que 1000px */
+  @media screen and (min-width: 800px) {
+    .img3 {
+      height: 300px;
+    }
+  }
+
+  /* Media query para pantallas más pequeñas que 1000px */
+  @media screen and (max-width: 800px) {
+    .img3 {
+      height: 50px;
+    }
+  }
 
 .imagen-ampliada {
     transform: scale(250%, 250%);
