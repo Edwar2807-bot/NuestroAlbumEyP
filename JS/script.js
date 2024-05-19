@@ -26,7 +26,7 @@ function filtroBusqueda(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const video = document.querySelector('.img3');
+    const video = document.querySelector('.video');
     video.addEventListener('loadedmetadata', function() {
         const canvas = document.createElement('canvas');
         canvas.width = video.videoWidth;

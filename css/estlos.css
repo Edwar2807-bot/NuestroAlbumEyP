@@ -57,7 +57,7 @@ a:hover{
 }
 
 
-.img2, .img3 {
+.img2, .img3,.video {
     display: inline-block;
     cursor: pointer;
     max-width: 70%;
@@ -66,14 +66,14 @@ a:hover{
 }
   /* Media query para pantallas más grandes que 1000px */
   @media screen and (min-width: 800px) {
-    .img3 {
+    .img3,.video {
       height: 250px;
     }
   }
 
   /* Media query para pantallas más pequeñas que 1000px */
   @media screen and (max-width: 800px) {
-    .img3 {
+    .img3,.video {
       height: 80px;
     }
   }
