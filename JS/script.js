@@ -6,11 +6,11 @@ function ampliarImagen(img){
     img.classList.toggle('imagen-ampliada');
 }
 
-
 function filtroBusqueda(){
     d.addEventListener("keyup", e => {
         if (e.target.matches(".card-filter")) {
-            const valorBusqueda = e.target.value.toLowerCase();
+            const valorBusqueda = e.target.value.toLowerCase(); //obtiene el valor de la busqueda
+            
             d.querySelectorAll(".cargue").forEach(el => {
                 const descripcion = el.querySelector(".filter-d").textContent.toLowerCase();
                 if (descripcion.includes(valorBusqueda)) {
@@ -24,20 +24,3 @@ function filtroBusqueda(){
         }
     });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    const video = document.querySelector('.video');
-    
-    video.addEventListener('loadeddata', function() {
-        const canvas = document.createElement('canvas');
-        canvas.width = video.videoWidth;
-        canvas.height = video.videoHeight;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-        const imgData = canvas.toDataURL('image/png');
-        video.setAttribute('poster', imgData);
-    });
-    
-    // Esto asegura que el video se cargue aunque no se reproduzca
-    video.load();
-});

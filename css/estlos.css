@@ -44,6 +44,11 @@ header {
 
 a:hover{
     text-decoration: underline;
+    color: blue;
+}
+
+a {
+    color: black;
 }
 
 .filtro-fecha, .filtro-fecha2 {
@@ -110,4 +115,10 @@ p {
 
 .filter {
     display: none;
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+  align-items: center;
 }
