@@ -5,6 +5,7 @@
 }
 body {
     background-image: url('../images/fondo3.jpg');
+    width: 100%;
 }
 
 h1 {
@@ -59,6 +60,12 @@ a:hover{
     display: inline-block;
     cursor: pointer;
     max-width: 70%;
+}
+
+@media (min-width: 1000px) {
+    .img2 {
+        height: 200px;
+    }
 }
 
 .imagen {
